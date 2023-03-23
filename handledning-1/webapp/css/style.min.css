@@ -1,0 +1,83 @@
+body {
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  padding: 40px 0;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logo toggle" "menulinks menulinks" "menuicons menuicons";
+}
+@media (min-width: 1200px) {
+  header .container {
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-areas: "logo menulinks menuicons";
+  }
+}
+header .logo {
+  grid-area: logo;
+}
+header .menu-links {
+  grid-area: menulinks;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  header .menu-links {
+    text-align: right;
+    display: block;
+  }
+}
+header .menu-icons {
+  grid-area: menuicons;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #292929;
+  color: #FFFFFF;
+}
+header .menu-icons .link {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 18px;
+}
+header .menu-icons .link:hover {
+  color: #AEAEAE;
+}
+@media (min-width: 1200px) {
+  header .menu-icons .link {
+    color: #636363;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  header .menu-icons .link:hover {
+    color: #FA3150;
+  }
+}
+@media (min-width: 1200px) {
+  header .menu-icons {
+    text-align: right;
+    position: static;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+}
+header .toggle {
+  grid-area: toggle;
+  display: block;
+  text-align: right;
+}
+@media (min-width: 1200px) {
+  header .toggle {
+    display: none;
+  }
+}

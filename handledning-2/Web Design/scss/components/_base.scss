@@ -1,0 +1,25 @@
+html, body {
+    @include standard-font;
+
+    margin-bottom: 32px;
+
+    @include xl {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    color: $color-theme-1;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-theme-1;
+        text-decoration: underline;
+    }
+}
+
+.open-menu {
+    width: 100vw !important;
+    opacity: 0.99;
+    transform: translateX(-100%);
+}

@@ -1,0 +1,83 @@
+.newsletter {
+    font-family: $font-poppins;
+    background-color: $color-dark-4;
+    padding: 80px 0;
+
+    .container {
+        background-color: $color-white;
+        padding: 70px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include md {
+            padding: 70px 80px;
+        }
+
+        @include lg {
+            padding: 70px 150px;
+        }
+    }
+
+    form {
+        width: 100%;
+        position: relative;
+        text-align: center;
+
+        input {
+            position: relative;
+            height: 46px;
+            width: 100%;
+            border-radius: 25px;
+            border: 1px solid $color-dark-5;
+            padding: 0 0 0 40px;
+            outline: 0;
+
+            &:focus {
+                border: 1px solid $color-dark-4;
+            }
+
+            @include lg {
+                width: 100%;
+            }
+        }
+
+        button {
+
+            margin-top: 30px;
+
+
+            @include xl {
+                margin-top: 0;
+                position: absolute;
+                top: 0; 
+                right: 0;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// .newsletter {
+
+
+//     form {
+
+
+//         button {
+//             position: absolute;
+//             top: 0; 
+//             right: 0;
+//         }
+//     }
+// }

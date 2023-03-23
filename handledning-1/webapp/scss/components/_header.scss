@@ -1,0 +1,82 @@
+header {
+    padding: 40px 0; 
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "logo toggle"
+                                "menulinks menulinks"
+                                "menuicons menuicons";
+
+
+        @include xl {
+            grid-template-columns: 4fr 4fr 2fr;
+            grid-template-areas:    "logo menulinks menuicons";
+        }
+    }
+
+    .logo {
+        grid-area: logo; 
+    }
+
+    .menu-links {
+        grid-area: menulinks;
+        text-align: center;
+
+        
+        @include xl {
+            text-align: right;
+            display: block;
+        }
+    }
+
+    .menu-icons {
+        grid-area: menuicons;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: $color-dark-2;
+        color: $color-white;
+
+        .link {
+            color: $color-white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+
+            &:hover {
+                color: $color-dark-4;
+            }
+
+            @include xl {
+                color: $color-dark-3;
+                margin-left: 5px;
+                font-size: 16px;
+
+                &:hover {
+                    color: $color-theme-1;
+                }
+            }
+        }
+
+        @include xl {
+            text-align: right;
+            position: static;
+            padding: 0;
+            background-color: $color-white;
+        }
+    }
+
+    .toggle {
+        grid-area: toggle;
+        display: block;
+        text-align: right;
+
+        @include xl {
+            display: none;
+        }
+    }
+}
