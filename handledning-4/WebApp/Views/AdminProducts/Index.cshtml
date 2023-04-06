@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ProductEntity>
+
+<div class="container mt-5">
+    @foreach (var item in Model)
+    {
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="mb-3 d-flex align-items-center">
+                <img style="height: 60px;" src="/images/placeholders/@item.ImageName" alt="@item.Name" />
+                <div class="ms-3">
+                    <div><strong>@item.Name (@item.ArticleNumber)</strong></div>
+                    <div>@item.Description</div>
+                </div>
+            </div>
+            <div>
+                <a asp-route-id="@item.ArticleNumber" asp-action="edit" asp-controller="adminproducts" class="btn-theme" style="text-decoration:none;">Ändra</a>
+                <a asp-route-id="@item.ArticleNumber" asp-action="remove" asp-controller="adminproducts" class="btn-theme" style="text-decoration:none;">Ta Bort</a>
+            </div>
+        </div>
+    }
+</div>
