@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hans\\OneDrive - EPN Sverige AB\\Documents\\Utbildning\\Education\\WIN22HG\\handledning-7\\Merketo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hans\\OneDrive - EPN Sverige AB\\Documents\\Utbildning\\Education\\WIN22HG\\handledning-7\\Merketo\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hans\\OneDrive - EPN Sverige AB\\Documents\\Utbildning\\Education\\WIN22HG\\handledning-7\\Merketo\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Merketo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Merketo.props",
+      "PackagePath": "build\\Merketo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Merketo.props",
+      "PackagePath": "buildMultiTargeting\\Merketo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Merketo.props",
+      "PackagePath": "buildTransitive\\Merketo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
